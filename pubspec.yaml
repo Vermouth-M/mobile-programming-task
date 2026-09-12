@@ -1,0 +1,24 @@
+name: skor_app
+description: Aplikasi pencatatan skor pertandingan 2 pemain dengan setting max score.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # provider: state management ringan bawaan-standar Flutter community,
+  # dipakai untuk menghubungkan Controller (logic) ke View (UI) tanpa
+  # perlu passing data manual lewat banyak widget (props drilling).
+  provider: ^6.1.2
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
