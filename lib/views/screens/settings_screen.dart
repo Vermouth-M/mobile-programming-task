@@ -49,8 +49,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Pengaturan Pertandingan')),
-      body: Padding(
+      appBar: AppBar(title: const Text('Setting Pertandingan')),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/bg_main_menu.png'),
+            fit: BoxFit.cover, 
+          ),
+        ),
         padding: const EdgeInsets.all(24),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -58,12 +64,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             const Text(
               'Skor Maksimum',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 8),
             const Text(
               'Pemain yang lebih dulu mencapai angka ini akan menang.',
-              style: TextStyle(color: Colors.black54),
+              style: TextStyle(fontSize: 12,color: Colors.black54),
             ),
             const SizedBox(height: 16),
             TextField(
