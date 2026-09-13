@@ -1,4 +1,4 @@
-# Skor App
+# Skor Game
 Game pencatatan skor pertandingan untuk 2 pemain, dibangun dengan **Flutter**. Pengguna bisa mengatur skor maksimum terlebih dahulu, lalu kedua pemain menekan area masing-masing di layar yang sama untuk menambah skor secara **real-time** 
 
 ## Anggota Kelompok
