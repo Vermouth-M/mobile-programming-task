@@ -35,6 +35,7 @@ lib/
 │   └── game_controller.dart      # Semua aturan permainan 
 └── views/
     ├── screens/
+        ├── main_menu.dart 
     │   ├── settings_screen.dart  # Input skor maksimum sebelum mulai
     │   └── game_screen.dart      # Layar pertandingan + dialog pemenang
     └── widgets/
