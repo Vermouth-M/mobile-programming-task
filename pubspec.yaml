@@ -22,3 +22,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/Exit.png
+    - assets/images/logo.png
+    - assets/images/OPTIONS.png
+    - assets/images/PLAY.png
+    - assets/images/bg_main_menu.png

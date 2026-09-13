@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'controllers/game_controller.dart';
 import 'views/screens/settings_screen.dart';
+import 'views/screens/main_menu.dart';
 
 void main() {
   runApp(const SkorApp());
@@ -25,7 +26,7 @@ class SkorApp extends StatelessWidget {
           colorSchemeSeed: Colors.indigo,
           useMaterial3: true,
         ),
-        home: const SettingsScreen(),
+        home: const MainMenuScreen(),
       ),
     );
   }

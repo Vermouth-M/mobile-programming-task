@@ -1,4 +1,4 @@
-# Skor App
+# Skor Game
 Game pencatatan skor pertandingan untuk 2 pemain, dibangun dengan **Flutter**. Pengguna bisa mengatur skor maksimum terlebih dahulu, lalu kedua pemain menekan area masing-masing di layar yang sama untuk menambah skor secara **real-time** 
 
 ## Anggota Kelompok
@@ -11,7 +11,7 @@ Game pencatatan skor pertandingan untuk 2 pemain, dibangun dengan **Flutter**. P
 | 5  |   Muhamad Risqi Aditiya   |  5024221010   |
 
 ## Fitur
-
+- 
 - **Setting skor maksimum** sebelum pertandingan dimulai.
 - **Dua area sentuh independen** (kiri untuk Pemain 1, kanan untuk Pemain 2) yang bisa ditekan **bersamaan**
 - **Dialog Winner otomatis** begitu salah satu pemain mencapai skor maksimum, menampilkan skor akhir.
@@ -21,13 +21,21 @@ Game pencatatan skor pertandingan untuk 2 pemain, dibangun dengan **Flutter**. P
 
 ```
 lib/
-├── main.dart                     # Entry point + root ChangeNotifierProvider
+├── main.dart
+├── ├── assets/
+    │   ├── images/
+    │   │   ├── Exit.png
+    │   │   ├── PLAY.png
+    │   │   ├── OPTIONS.png
+    │   │   ├── logo.png
+    │   │   ├── bg_main_menu.png
 ├── models/
 │   └── match_model.dart          # Data pertandingan (skor, status, max score)
 ├── controllers/
 │   └── game_controller.dart      # Semua aturan permainan 
 └── views/
     ├── screens/
+        ├── main_menu.dart 
     │   ├── settings_screen.dart  # Input skor maksimum sebelum mulai
     │   └── game_screen.dart      # Layar pertandingan + dialog pemenang
     └── widgets/
@@ -64,7 +72,8 @@ flutter run
 
 ## Cara Pakai
 
-1. Buka aplikasi → masukkan **skor maksimum** di halaman Pengaturan.
-2. Tekan **"Mulai Pertandingan"**.
-3. Setiap pemain menekan area warnanya masing-masing (biru = Pemain 1, merah = Pemain 2) untuk menambah skor satu poin per ketukan.
-4. Begitu salah satu pemain mencapai skor maksimum, dialog pemenang muncul dengan pilihan **Main Lagi** atau **Ubah Setting**.
+1. Buka aplikasi → klik tombol **Play** 
+2. masukkan **skor maksimum** di halaman Pengaturan.
+3. Tekan **"Mulai Pertandingan"**.
+4. Setiap pemain menekan area warnanya masing-masing (biru = Pemain 1, merah = Pemain 2) untuk menambah skor satu poin per ketukan.
+5. Begitu salah satu pemain mencapai skor maksimum, dialog pemenang muncul dengan pilihan **Main Lagi** atau **Ubah Setting**.
