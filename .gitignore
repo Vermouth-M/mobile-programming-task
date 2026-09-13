@@ -3,7 +3,6 @@
 .pub/
 .pub-cache/
 build/
-web/
 
 # Flutter generated files
 .flutter-plugins

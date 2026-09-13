@@ -1,79 +1,99 @@
-# Skor Game
-Game pencatatan skor pertandingan untuk 2 pemain, dibangun dengan **Flutter**. Pengguna bisa mengatur skor maksimum terlebih dahulu, lalu kedua pemain menekan area masing-masing di layar yang sama untuk menambah skor secara **real-time**
+# Mobile Programming Task
+
+Repository ini berisi kumpulan tugas pemrograman mobile. Setiap tugas dibuat sebagai proyek Flutter mandiri, sehingga source code, asset, dependency, dan konfigurasi masing-masing tugas tidak saling berbagi.
 
 ## Anggota Kelompok
+
 | No | Nama | NRP |
 |----|------|-----|
-| 1  |  Nicholas Benaya    |  5024241050   |
-| 2  |   Jordi   |  5024241029   |
-| 3  |   Devi Putri Sekar Arum   |  5024241049   |
-| 4  |   Fito Dwi Ardiansah   |  5024241053   |
-| 5  |   Muhamad Risqi Aditiya   |  5024221010   |
+| 1  | Nicholas Benaya | 5024241050 |
+| 2  | Jordi | 5024241029 |
+| 3  | Devi Putri Sekar Arum | 5024241049 |
+| 4  | Fito Dwi Ardiansah | 5024241053 |
+| 5  | Muhamad Risqi Aditiya | 5024221010 |
 
-## Fitur
--
-- **Setting skor maksimum** sebelum pertandingan dimulai.
-- **Dua area sentuh independen** (kiri untuk Pemain 1, kanan untuk Pemain 2) yang bisa ditekan **bersamaan**
-- **Dialog Winner otomatis** begitu salah satu pemain mencapai skor maksimum, menampilkan skor akhir.
-- **Main lagi (rematch)** dengan target skor yang sama, atau **kembali ke pengaturan** untuk mengubah target skor.
+## Panduan Membaca Repository
 
-## Struktur Folder
+README di root ini berisi informasi umum repository dan anggota kelompok. Setiap folder tugas memiliki nested README yang berfungsi sebagai laporan resmi untuk project tersebut.
 
-```
-lib/
-├── main.dart
-├── ├── assets/
-    │   ├── images/
-    │   │   ├── Exit.png
-    │   │   ├── PLAY.png
-    │   │   ├── OPTIONS.png
-    │   │   ├── logo.png
-    │   │   ├── bg_main_menu.png
-├── models/
-│   └── match_model.dart          # Data pertandingan (skor, status, max score)
-├── controllers/
-│   └── game_controller.dart      # Semua aturan permainan
-└── views/
-    ├── screens/
-        ├── main_menu.dart
-    │   ├── settings_screen.dart  # Input skor maksimum sebelum mulai
-    │   └── game_screen.dart      # Layar pertandingan + dialog pemenang
-    └── widgets/
-        └── score_area.dart       # Widget area skor per pemain (tap-to-add-point function)
-```
+Assessor dapat merujuk ke nested README di dalam folder tugas untuk melihat tujuan, fitur, struktur kode, dependency, instruksi menjalankan, dan informasi teknis project secara lengkap. Dengan demikian, informasi anggota kelompok cukup dipelihara di README root dan tidak perlu diulang pada setiap laporan project.
 
-## Instalasi & Menjalankan
+## Prasyarat
 
-### Prasyarat
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) versi yang mendukung Dart `>=3.0.0`
-- Flutter Web
+- Flutter SDK terpasang dan dapat dijalankan dari terminal.
+- Dart SDK mengikuti versi yang disertakan oleh Flutter.
+- Device atau browser yang mendukung Flutter.
 
-### Langkah
+Cek instalasi Flutter dengan:
 
 ```bash
-# 1. Clone repository
+flutter doctor
+```
+
+## Setelah Clone
+
+Clone repository lalu masuk ke folder repository:
+
+```bash
 git clone https://github.com/nicholasbenaya/mobile-programming-task.git
 cd mobile-programming-task
+```
 
-# 2. Ambil dependencies
+Setiap tugas memiliki folder sendiri. Jalankan perintah Flutter dari folder tugas yang ingin digunakan.
+
+## Menjalankan Tugas 1
+
+Tugas 1 adalah aplikasi skor pertandingan 2 pemain.
+
+```bash
+cd Tugas-1
 flutter pub get
-
-# 3. Jalankan aplikasi
 flutter run
 ```
 
-## Dependencies Utama
+Untuk menjalankan Tugas 1 di browser Chrome:
 
-| Package | Kegunaan |
-|---|---|
-| [`provider`](https://pub.dev/packages/provider) | State management ringan untuk menghubungkan Controller ke View tanpa passing data manual antar widget |
-| `cupertino_icons` | Ikon bergaya iOS |
-| `flutter_lints` | Aturan lint standar untuk menjaga kualitas kode |
+```bash
+flutter run -d chrome
+```
 
-## Cara Pakai
+Untuk kembali ke root repository setelah selesai:
 
-1. Buka aplikasi → klik tombol **Play**
-2. masukkan **skor maksimum** di halaman Pengaturan.
-3. Tekan **"Mulai Pertandingan"**.
-4. Setiap pemain menekan area warnanya masing-masing (biru = Pemain 1, merah = Pemain 2) untuk menambah skor satu poin per ketukan.
-5. Begitu salah satu pemain mencapai skor maksimum, dialog pemenang muncul dengan pilihan **Main Lagi** atau **Ubah Setting**.
+```bash
+cd ..
+```
+
+Laporan project dan dokumentasi khusus aplikasi skor tersedia di [`Tugas-1/README.md`](Tugas-1/README.md).
+
+## Struktur Repository
+
+```text
+.
+├── Tugas-1/
+│   ├── assets/       # Asset khusus Tugas-1
+│   ├── lib/          # Source code Tugas-1
+│   ├── web/          # Konfigurasi Flutter Web Tugas-1
+│   ├── pubspec.yaml  # Dependency dan konfigurasi Tugas-1
+│   └── README.md     # Dokumentasi detail Tugas-1
+└── README.md         # Panduan umum repository
+```
+
+## Menambahkan Tugas Berikutnya
+
+Buat setiap tugas sebagai folder Flutter terpisah, misalnya:
+
+```text
+Tugas-2/
+├── assets/
+├── lib/
+├── pubspec.yaml
+└── README.md
+```
+
+Lalu jalankan perintah dari folder tugas tersebut:
+
+```bash
+cd Tugas-2
+flutter pub get
+flutter run
+```
