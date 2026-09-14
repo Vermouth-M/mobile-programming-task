@@ -82,7 +82,7 @@ class MainMenuScreen extends StatelessWidget {
                     _showExitConfirmation(context);
                   },
                   child: Image.asset(
-                    'assets/images/EXIT.png',
+                    'assets/images/Exit.png',
                     height: 64,
                     ),
                     ),
