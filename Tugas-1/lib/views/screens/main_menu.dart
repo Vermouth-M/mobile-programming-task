@@ -87,7 +87,7 @@ class MainMenuScreen extends StatelessWidget {
                     ),
                     ),
                   
-                const SizedBox(height: 222),
+                const SizedBox(height: 116),
               ],
             ),
           ),
