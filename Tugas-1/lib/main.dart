@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'controllers/game_controller.dart';
+import 'views/screens/settings_screen.dart';
 import 'views/screens/main_menu.dart';
 
 void main() {
@@ -12,6 +13,10 @@ class SkorApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ChangeNotifierProvider di root -> GameController jadi bisa
+    // diakses (context.watch / context.read) dari widget mana pun
+    // di bawahnya di widget tree, tanpa perlu passing manual lewat
+    // constructor tiap widget (menghindari "prop drilling").
     return ChangeNotifierProvider(
       create: (_) => GameController(),
       child: MaterialApp(
