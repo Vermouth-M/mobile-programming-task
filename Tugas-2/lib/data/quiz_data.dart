@@ -1,0 +1,86 @@
+import '../models/quiz_model.dart';
+
+class QuizData {
+  static const List<QuizQuestion> questions = [
+    QuizQuestion(
+      id: 'q1',
+      heroId: 'soekarno',
+      question: 'Di kota manakah Ir. Soekarno dilahirkan pada tanggal 6 Juni 1901?',
+      options: ['Blitar', 'Surabaya', 'Bandung', 'Yogyakarta'],
+      correctIndex: 1,
+      explanation: 'Ir. Soekarno lahir di Surabaya, Jawa Timur pada 6 Juni 1901, sebelum kemudian menempuh pendidikan di Mojokerto dan Bandung.',
+    ),
+    QuizQuestion(
+      id: 'q2',
+      heroId: 'hatta',
+      question: 'Gelar kehormatan apakah yang disematkan kepada Bung Hatta atas jasa besarnya dalam ekonomi kerakyatan?',
+      options: ['Bapak Pembangunan', 'Bapak Koperasi Indonesia', 'Bapak Pendidikan Bangsa', 'Bapak Maritim Indonesia'],
+      correctIndex: 1,
+      explanation: 'Bung Hatta dijuluki sebagai Bapak Koperasi Indonesia berkat jasanya merumuskan prinsip ekonomi kekeluargaan dan koperasi.',
+    ),
+    QuizQuestion(
+      id: 'q3',
+      heroId: 'kartini',
+      question: 'Buku kumpulan surat R.A. Kartini yang sangat terkenal berjudul...',
+      options: ['Habis Gelap Terbitlah Terang', 'Bumi Manusia', 'Di Bawah Bendera Revolusi', 'Renungan Seorang Pejuang'],
+      correctIndex: 0,
+      explanation: 'Buku surat korespondensi R.A. Kartini diterbitkan oleh J.H. Abendanon dengan judul "Door Duisternis tot Licht" yang diterjemahkan menjadi "Habis Gelap Terbitlah Terang".',
+    ),
+    QuizQuestion(
+      id: 'q4',
+      heroId: 'soedirman',
+      question: 'Pertempuran heroik apakah yang dipimpin Soedirman hingga diperingati sebagai Hari Juang Kartika TNI AD?',
+      options: ['Pertempuran Surabaya', 'Palagan Ambarawa', 'Pertempuran Medan Area', 'Bandung Lautan Api'],
+      correctIndex: 1,
+      explanation: 'Kemenangan gemilang di Palagan Ambarawa pada 15 Desember 1945 mengabadikan nama Soedirman dan diperingati sebagai Hari Juang Kartika TNI AD.',
+    ),
+    QuizQuestion(
+      id: 'q5',
+      heroId: 'ki_hajar_dewantara',
+      question: 'Lembaga pendidikan nasional yang didirikan Ki Hajar Dewantara pada tahun 1922 adalah...',
+      options: ['Budi Utomo', 'Perguruan Taman Siswa', 'Sakola Istri', 'Muhammadiyah'],
+      correctIndex: 1,
+      explanation: 'Ki Hajar Dewantara mendirikan Nationaal Onderwijs Instituut Tamansiswa di Yogyakarta pada 3 Juli 1922.',
+    ),
+    QuizQuestion(
+      id: 'q6',
+      heroId: 'hasanuddin',
+      question: 'Sultan Hasanuddin dari Kerajaan Gowa dijuluki oleh pihak Belanda sebagai...',
+      options: ['Singa Maluku', 'Ayam Jantan dari Timur', 'Elang Jawa', 'Harimau Minang'],
+      correctIndex: 1,
+      explanation: 'Belanda menjuluki Sultan Hasanuddin "De Haantjes van Het Oosten" (Ayam Jantan dari Timur) karena keberaniannya menentang monopoli VOC.',
+    ),
+    QuizQuestion(
+      id: 'q7',
+      heroId: 'pattimura',
+      question: 'Benteng pertahanan Belanda yang berhasil direbut oleh Kapitan Pattimura di Pulau Saparua adalah...',
+      options: ['Benteng Rotterdam', 'Benteng Duurstede', 'Benteng Marlborough', 'Benteng Victoria'],
+      correctIndex: 1,
+      explanation: 'Pada Mei 1817, Kapitan Pattimura memimpin penyerbuan dan berhasil merebut Benteng Duurstede di Saparua, Maluku.',
+    ),
+    QuizQuestion(
+      id: 'q8',
+      heroId: 'frans_kaisiepo',
+      question: 'Tokoh pahlawan nasional asal Papua yang mengusulkan nama "IRIAN" pada Konferensi Malino 1946 adalah...',
+      options: ['Silas Papare', 'Frans Kaisiepo', 'Johannes Leimena', 'Marthen Indey'],
+      correctIndex: 1,
+      explanation: 'Frans Kaisiepo mempopulerkan akronim IRIAN (Ikut Republik Indonesia Anti Nederland) pada Konferensi Malino 1946.',
+    ),
+    QuizQuestion(
+      id: 'q9',
+      heroId: 'bung_tomo',
+      question: 'Bung Tomo membakar semangat juang arek-arek Suroboyo dalam pertempuran yang kini diperingati sebagai Hari Pahlawan pada tanggal...',
+      options: ['17 Agustus', '28 Oktober', '10 November', '20 Mei'],
+      correctIndex: 2,
+      explanation: 'Pertempuran heroik Surabaya pada 10 November 1945 diperingati sebagai Hari Pahlawan Nasional Indonesia.',
+    ),
+    QuizQuestion(
+      id: 'q10',
+      heroId: 'dewi_sartika',
+      question: 'Sekolah kejuruan khusus perempuan yang didirikan Raden Dewi Sartika di Bandung pada tahun 1904 adalah...',
+      options: ['Taman Siswa', 'Sakola Istri', 'Diniyyah Puteri', 'Kartini Fonds'],
+      correctIndex: 1,
+      explanation: 'Raden Dewi Sartika mendirikan Sakola Istri pada 16 Januari 1904 di Pendopo Kabupaten Bandung.',
+    ),
+  ];
+}
